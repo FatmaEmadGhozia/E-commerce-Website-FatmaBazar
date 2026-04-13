@@ -1,14 +1,41 @@
 import backgroundImage from "../assets/image_60.jpg";
 import Product from "./Product";
-
+import { popularProducts } from "../data/data";
+import { HouseholdProducts } from "../data/data";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { useState } from "react";
+import Footer from "./Footer";
 
 import { categories } from "../data/data";
 import Category from "./Category";
 
 export default function Main() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrev = () => {
+    setCurrentIndex(
+      (prev) =>
+        (prev - 1 + HouseholdProducts.length) % HouseholdProducts.length,
+    );
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % HouseholdProducts.length);
+  };
+
+  const visibleProducts = HouseholdProducts.slice(
+    currentIndex,
+    currentIndex + 5,
+  ).concat(
+    HouseholdProducts.slice(
+      0,
+      Math.max(0, currentIndex + 5 - HouseholdProducts.length),
+    ),
+  );
+
   return (
     <>
-      <div className="grid grid-cols-[1.9fr_1fr] px-60 mt-7 gap-20 font-inter">
+      <div className="grid grid-cols-[1.9fr_1.2fr] px-60 mt-7 gap-15 font-inter">
         {
           <div
             className=" h-100 rounded  px-15 pt-25"
@@ -21,17 +48,64 @@ export default function Main() {
               Discover our wide range of high-quality products <br /> across
               various categories.
             </p>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-md">
+            <button className="bg-[var(--primaryColor)] hover:bg-purple-900 text-white font-bold py-2 px-5 rounded-md">
               Buy Now
             </button>
           </div>
         }
-        <div className=" bg-red-500"></div>
+        <div className="  rounded-lg font-family border border-[var(--primaryColor)] ">
+          <div className="w-full bg-purple-50 h-15 text-center p-4 ">
+            <p className="text-md font-bold">Latest Super Discount Active Coupon Code</p>
+          </div>
+          <div className=" flex justify-between mt-4 bg-white shadow-md p-5 mx-3">
+            <div>
+             <p ><span className="text-xl mr-3 text-red-500">$50 </span>OF <span className="bg-red-200 rounded-lg text-red-500 p-2 font-bold ml-2">inactive</span></p>
+             <p className="mt-2">ttgt</p>
+             <p className="mt-2"><span className="bg-red-500 text-white p-2 font-bold">00</span> : <span className="bg-red-500 text-white p-2 font-bold">00</span> : <span className="bg-red-500 text-white p-2 font-bold">00</span> : <span className="bg-red-500 text-white p-2 font-bold">00</span></p>
+            </div>
+            <div className="">
+            <div className="bg-purple-100 w-full text-[var(--primaryColor)] p-2 w-25 text-center rounded-lg font-bold border-dotted">
+              <p>FFFFFF</p>
+              
+            </div>
+            <div>
+              <p className="text-sm mt-2">* This coupon apply when <br />shopping more then <br />
+               $100.00</p>
+            </div>
+            </div>
+
+          </div>
+           <div className=" flex justify-between mt-4 bg-white shadow-md p-5 mx-3">
+            <div>
+             <p ><span className="text-xl mr-3 text-purple-500">$100 </span>OF <span className="bg-purple-200 rounded-lg text-purple-500 p-2 font-bold ml-2">active</span></p>
+             <p className="mt-2">Eid 2026</p>
+             <p className="mt-2"><span className="bg-purple-500 text-white p-2 font-bold">00</span> : <span className="bg-purple-500 text-white p-2 font-bold">00</span> : <span className="bg-purple-500 text-white p-2 font-bold">00</span> : <span className="bg-purple-500 text-white p-2 font-bold">00</span></p>
+            </div>
+            <div className="">
+            <div className="bg-purple-100 w-full text-[var(--primaryColor)] p-2 w-25 text-center rounded-lg font-bold border-dotted">
+              <p>FFFFFF</p>
+              
+            </div>
+            <div>
+              <p className="text-sm mt-2">* This coupon apply when <br />shopping more then <br />
+               $1000.00</p>
+            </div>
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
       </div>
 
-      <div className="description bg-blue-100 mx-60 mt-7 rounded-lg flex items-center justify-between p-6 font-inter">
+      <div className="description bg-purple-50 border border-gray-200 mx-60 mt-7 rounded-lg flex items-center justify-between p-6 font-inter">
         <div className="pl-8 ">
-          <h2 className="text-blue-500 font-bold text-2xl mb-1">
+          <h2 className="text-[var(--primaryColor)] font-bold text-2xl mb-1">
             100% Natural Quality Organic Product
           </h2>
           <p className="text-gray-600 text-lg">
@@ -40,13 +114,13 @@ export default function Main() {
           </p>
         </div>
         <div>
-          <button className="bg-blue-500   hover:bg-blue-700 text-white font-bold py-3 px-5 rounded-2xl w-30">
+          <button className="bg-[var(--primaryColor)]   hover:bg-purple-900 text-white font-bold py-3 px-5 rounded-2xl w-30">
             Buy Now{" "}
           </button>
         </div>
       </div>
 
-      <section className="categories bg-gray-100  mt-7 font-inter h-150 p-15">
+      <section className="categories bg-gray-100  mt-7 font-inter font-family h-150 p-15">
         <h1 className="text-center text-3xl mb-2">Featured Categories</h1>
         <p className="text-center text-gray-500 text-lg">
           Choose your necessary products from this feature categories.
@@ -60,18 +134,130 @@ export default function Main() {
           })}
         </div>
       </section>
-      <section className="popular-products  bg-gray-100 mt-7 font-inter h-150 p-15">
-        <h1 className="text-center text-3xl mb-2">Popular Products for Daily Shopping</h1>
+      <section className="popular-products  mt-7 font-inter  p-15 font-family ">
+        <h1 className="text-center text-3xl mb-2">
+          Popular Products for Daily Shopping
+        </h1>
         <p className="text-center text-gray-500 text-md">
           See all our popular products in this week. You can choose your daily
           needs <br />
           products from this list and get some special offer with free shipping.
         </p>
-        <div className="products">
-          <Product />
-
+        <div className="products mx-45 mt-10 grid grid-cols-5 gap-y-10 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 ">
+          {popularProducts.map((product) => {
+            return (
+              <Product
+                name={product.name}
+                price={product.price}
+                oldPrice={product.oldPrice}
+                rating={product.rating}
+                reviews={product.reviews}
+                discount={product.discount}
+                sold={product.sold}
+                total={product.total}
+                image={product.image}
+              />
+            );
+          })}
         </div>
       </section>
+
+      <section className="mt-20 font-family mx-43 ">
+        <div className="description flex items-center justify-between ">
+          <div>
+            <h2 className="text-2xl font-bold  mb-2 ">Household Tools</h2>
+            <p className="text-xsm text-gray-600">
+              Globally build competitive niches whereas empowered collaboration
+              and idea-sharing. Interactively maximize mission-critical
+              convergence without empowered e-business.
+            </p>
+          </div>
+          <div>
+            <button className="bg-[var(--primaryColor)] text-sm text-white p-3 rounded-lg font-bold hover:bg-purple-900">
+              View All Products
+            </button>
+          </div>
+        </div>
+        <div className=" relative grid grid-cols-5 gap-x-1 gap-y-10 mt-15">
+          <FiChevronLeft
+            className=" absolute  top-[40%] -left-1 text-3xl text-gray-500 cursor-pointer bg-white  z-10 "
+            onClick={handlePrev}
+          />
+          <FiChevronRight
+            className="absolute top-[40%] right-16 text-3xl text-gray-500 bg-red-100 bg-white cursor-pointer z-10"
+            onClick={handleNext}
+          />
+
+          {visibleProducts.map((product) => {
+            return (
+              <Product
+                name={product.name}
+                price={product.price}
+                rating={product.rating}
+                reviews={product.reviews}
+                discount={product.discount}
+                image={product.image}
+              />
+            );
+          })}
+        </div>
+      </section>
+
+      <hr className="text-gray-200 mt-15" />
+
+      <section className=" mt-30 font-family mx-43 ">
+        <div className="description flex items-center justify-between ">
+          <div>
+            <h2 className="text-2xl font-bold  mb-2 ">Fruits & Vegetable</h2>
+            <p className="text-xsm text-gray-600">
+              Quickly unleash resource-leveling niche markets rather than
+              prospective leadership skills.
+              <br />
+              Enthusiastically develop resource maximizing web services after
+              client-centric portals.
+            </p>
+          </div>
+          <div>
+            <button className="bg-[var(--primaryColor)] text-sm text-white p-3 rounded-lg font-bold hover:bg-purple-900">
+              View All Products
+            </button>
+          </div>
+        </div>
+        <div className=" relative grid grid-cols-5 gap-x-1 gap-y-10 mt-15">
+          <FiChevronLeft
+            className=" absolute  top-[40%] -left-1 text-3xl text-gray-500 cursor-pointer bg-white  z-10 "
+            onClick={handlePrev}
+          />
+          <FiChevronRight
+            className="absolute top-[40%] right-16 text-3xl text-gray-500 bg-red-100 bg-white cursor-pointer z-10"
+            onClick={handleNext}
+          />
+
+          {visibleProducts.map((product) => {
+            return (
+              <Product
+                name={product.name}
+                price={product.price}
+                rating={product.rating}
+                reviews={product.reviews}
+                discount={product.discount}
+                image={product.image}
+              />
+            );
+          })}
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+  
+      <Footer/>
     </>
   );
 }
