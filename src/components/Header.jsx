@@ -24,7 +24,7 @@ import { FiShoppingCart ,FiBell ,  FiUser } from "react-icons/fi";
         </div>
         <div className="icons ml-auto flex text-2xl gap-8">
           <FiShoppingCart className='text-white'/>
-          <FiBell className=' text-white'/>
+          <FiBell className='text-white'/>
           <FiUser className='text-white'/>
             
         </div>

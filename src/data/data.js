@@ -445,5 +445,6 @@ import product15 from "../assets/house15.avif";
     originalPrice: null,
     discount: null,
     image : product15
-  }
+  },
+  
 ];

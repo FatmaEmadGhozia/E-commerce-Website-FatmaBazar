@@ -1,77 +1,6 @@
-// import cookingIcon from "../assets/image_1.jpg";
-// import { useState } from "react";
-
-// export default function NavBar() {
-//   const [open, setOpen] = useState(false);
-//   const [selected, setSelected] = useState("Categories");
-
-//   const options = [
-//     "Cooking",
-//     "Biscuits & Cakes",
-//     "Household Tools",
-//     "Pet Care",
-//     "Beauty & Healths",
-//     "Jam & Jelly",
-//     "Milk & Dairy",
-//     "Drinks",
-//     "Breakfast",
-//   ];   
-//   const iconsOptions = [
-//     cookingIcon
-    
-//   ];
-
-//   return (
-//     <>
-//       <nav className="mt-3">
-//         <ul className="flex gap-10 px-60 font-inter font-bold items-center">
-          
-//           {/* Custom Select */}
-//           <li className="relative">
-            
-//             {/* Selected */}
-//             <div
-//               onClick={() => setOpen(!open)}
-//               className="bg-white text-gray-700 px-3 py-1 rounded cursor-pointer border hover:border-blue-500"
-//             >
-//               {selected}
-//             </div>
-
-//             {/* Dropdown */}
-//             {open && (
-//               <ul className="absolute left-0 mt-2 w-100 bg-white border rounded shadow-lg z-50">
-//                 {options.map((item, index) => (
-//                   <li
-//                     key={index}
-//                     onClick={() => {
-//                       setSelected(item);
-//                       setOpen(false);
-//                     }}
-//                     className="px-3 py-3 border-b border-[var(--border)]  hover:bg-white hover:text-[var(--primary)] cursor-pointer"
-//                   >
-//                     {iconsOptions[index] && (
-//                       <img src={iconsOptions[index]} alt={item} className="w-6 h-6 mr-2" />
-//                     )}
-//                     <span className=" ">{item}</span>
-//                   </li>
-//                 ))}
-//               </ul>
-//             )}
-//           </li>
-
-//           <li>About US</li>
-//           <li>Contact Us</li>
-//           <li>Pages</li>
-//         </ul>
-//       </nav>
-
-//       <hr className="mt-4 text-gray-400" />
-//     </>
-//   );
-// }
-
 
 import { useState } from "react";
+import { FiChevronDown } from "react-icons/fi";
 
 
 import cookingIcon from "../assets/image_1.jpg";
@@ -111,10 +40,10 @@ export default function NavBar() {
             {/* Selected */}
             <div
               onClick={() => setOpen(!open)}
-              className="flex items-center justify-between gap-2 bg-white text-gray-700 px-4 py-2 rounded border cursor-pointer w-56 hover:border-[var(--primary)]"
+              className="flex items-center justify-between  bg-white text-gray-700 px-4 py-2  rounded border cursor-pointer w-56 hover:border-[var(--primaryColor)] transition"
             >
               <span>{selected}</span>
-              <span className="text-sm">▼</span>
+              <span className="text-sm"> < FiChevronDown  className="text-lg "/> </span>
             </div>
 
             {/* Dropdown */}
@@ -127,7 +56,7 @@ export default function NavBar() {
                       setSelected(item.name);
                       setOpen(false);
                     }}
-                    className="flex items-center gap-3 px-4 py-3 border-b border-gray-100 hover:bg-[var(--secondary)] hover:text-[var(--primary)] cursor-pointer transition"
+                    className="flex items-center gap-3 px-4 py-3 border-b border-gray-100 hover:bg-purple-100  hover:text-[var(--white)] cursor-pointer transition"
                   >
                     <img
                       src={item.icon}
@@ -141,13 +70,13 @@ export default function NavBar() {
             )}
           </li>
 
-          <li className="cursor-pointer hover:text-[var(--primary)] transition">
+          <li className="cursor-pointer hover:text-[var(--primaryColor)] transition">
             About US
           </li>
-          <li className="cursor-pointer hover:text-[var(--primary)] transition">
+          <li className="cursor-pointer hover:text-[var(--primaryColor)] transition">
             Contact Us
           </li>
-          <li className="cursor-pointer hover:text-[var(--primary)] transition">
+          <li className="cursor-pointer hover:text-[var(--primaryColor)] transition">
             Pages
           </li>
         </ul>

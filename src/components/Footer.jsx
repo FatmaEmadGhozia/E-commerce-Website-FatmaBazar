@@ -7,7 +7,7 @@ import footerimage2 from "../assets/footer2.avif";
 
 export default function Footer() {
   return (
-    <footer className="font-family mt-15 mx-45">
+    <footer className="font-family mt-15 mx-25">
   <section className="mb-20">
         <div className=" grid grid-cols-3 gap-4 mt-40 mx-45" >
           <div>
@@ -24,7 +24,8 @@ export default function Footer() {
             </p>
             <div className="flex justify-center gap-3 ">
             <div className="bg-black text-white p-2 rounded-lg w-50 mt-7 mx-auto"> 
-              <p>Availble on thebr
+              <p>Availble on the <br />
+
                  Google Play</p>
             </div>
             <div className="bg-black text-white p-2 rounded-lg w-50 mt-7 mx-auto"> 
@@ -33,7 +34,7 @@ export default function Footer() {
           </div>
           </div>
           <div>
-            <img src={footerimage2} alt="" className="h-100 w-150" />
+            <img src={footerimage2} alt="" className="h-100 w-160" />
           </div>
         </div>
 </section>

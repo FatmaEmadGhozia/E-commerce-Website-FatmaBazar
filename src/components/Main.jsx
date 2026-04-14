@@ -25,17 +25,17 @@ export default function Main() {
 
   const visibleProducts = HouseholdProducts.slice(
     currentIndex,
-    currentIndex + 5,
+    currentIndex + 6,
   ).concat(
     HouseholdProducts.slice(
       0,
-      Math.max(0, currentIndex + 5 - HouseholdProducts.length),
+      Math.max(0, currentIndex + 6- HouseholdProducts.length),
     ),
   );
 
   return (
     <>
-      <div className="grid grid-cols-[1.9fr_1.2fr] px-60 mt-7 gap-15 font-inter">
+      <div className="grid grid-cols-[2fr_1.5fr] px-25 mt-7 gap-3 font-inter">
         {
           <div
             className=" h-100 rounded  px-15 pt-25"
@@ -103,7 +103,7 @@ export default function Main() {
         </div>
       </div>
 
-      <div className="description bg-purple-50 border border-gray-200 mx-60 mt-7 rounded-lg flex items-center justify-between p-6 font-inter">
+      <div className="description bg-purple-50 border border-gray-200 mx-25 mt-7 rounded-lg flex items-center justify-between p-6 font-inter">
         <div className="pl-8 ">
           <h2 className="text-[var(--primaryColor)] font-bold text-2xl mb-1">
             100% Natural Quality Organic Product
@@ -120,13 +120,13 @@ export default function Main() {
         </div>
       </div>
 
-      <section className="categories bg-gray-100  mt-7 font-inter font-family h-150 p-15">
+      <section className="categories bg-gray-100  mt-7 font-inter font-family h-200 p-15 mx-25">
         <h1 className="text-center text-3xl mb-2">Featured Categories</h1>
         <p className="text-center text-gray-500 text-lg">
           Choose your necessary products from this feature categories.
         </p>
 
-        <div className="grid  grid-cols-5   mx-45">
+        <div className="grid  grid-cols-5 -gap-y-2 gap-x-1 mt-10  ">
           {categories.map((cat) => {
             return (
               <Category title={cat.title} icon={cat.icon} items={cat.items} />
@@ -143,7 +143,7 @@ export default function Main() {
           needs <br />
           products from this list and get some special offer with free shipping.
         </p>
-        <div className="products mx-45 mt-10 grid grid-cols-5 gap-y-10 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 ">
+        <div className=" mx-20 products mt-10 grid grid-cols-6 gap-y-10   ">
           {popularProducts.map((product) => {
             return (
               <Product
@@ -166,25 +166,25 @@ export default function Main() {
         <div className="description flex items-center justify-between ">
           <div>
             <h2 className="text-2xl font-bold  mb-2 ">Household Tools</h2>
-            <p className="text-xsm text-gray-600">
+            <p className="text-sm text-gray-600">
               Globally build competitive niches whereas empowered collaboration
               and idea-sharing. Interactively maximize mission-critical
               convergence without empowered e-business.
             </p>
           </div>
           <div>
-            <button className="bg-[var(--primaryColor)] text-sm text-white p-3 rounded-lg font-bold hover:bg-purple-900">
+            <button className="bg-[var(--primaryColor)] text-sm text-white p-3 rounded-lg font-bold hover:bg-purple-900 w-40">
               View All Products
             </button>
           </div>
         </div>
-        <div className=" relative grid grid-cols-5 gap-x-1 gap-y-10 mt-15">
+        <div className=" relative grid grid-cols-6 -gap-x-5  mt-15">
           <FiChevronLeft
-            className=" absolute  top-[40%] -left-1 text-3xl text-gray-500 cursor-pointer bg-white  z-10 "
+            className=" absolute  top-[40%] -left-1 text-2xl  text-gray-500 cursor-pointer bg-white  z-10 rounded-full "
             onClick={handlePrev}
           />
           <FiChevronRight
-            className="absolute top-[40%] right-16 text-3xl text-gray-500 bg-red-100 bg-white cursor-pointer z-10"
+            className="absolute top-[40%] right-3 text-3xl text-gray-500 bg-red-100 bg-white cursor-pointer z-10"
             onClick={handleNext}
           />
 
@@ -218,18 +218,18 @@ export default function Main() {
             </p>
           </div>
           <div>
-            <button className="bg-[var(--primaryColor)] text-sm text-white p-3 rounded-lg font-bold hover:bg-purple-900">
+            <button className="bg-[var(--primaryColor)] text-sm text-white p-3 rounded-lg font-bold hover:bg-purple-900 w-40">
               View All Products
             </button>
           </div>
         </div>
-        <div className=" relative grid grid-cols-5 gap-x-1 gap-y-10 mt-15">
+        <div className=" relative grid grid-cols-6 -gap-x-5 mt-15">
           <FiChevronLeft
             className=" absolute  top-[40%] -left-1 text-3xl text-gray-500 cursor-pointer bg-white  z-10 "
             onClick={handlePrev}
           />
           <FiChevronRight
-            className="absolute top-[40%] right-16 text-3xl text-gray-500 bg-red-100 bg-white cursor-pointer z-10"
+            className="absolute top-[40%] right-3 text-3xl text-gray-500 bg-red-100 bg-white cursor-pointer z-10"
             onClick={handleNext}
           />
 
