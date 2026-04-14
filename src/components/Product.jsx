@@ -1,12 +1,18 @@
 import { FiStar } from "react-icons/fi";
 import { HiOutlineShoppingBag } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
 
-import Letuuce from "../assets/image_27.jpg";
 
-export default function Product({ name, price, reviews, image, rating }) {
+
+export default function Product({ name, price, reviews, image, rating ,id}) {
+  const navigate = useNavigate();
+ 
   return (
     <>
-      <div className="border border-gray-300 w-60  rounded-lg font-family shadow-md  transiton-transform duration-300 hover:scale-105 cursor-pointer hover:border-[var(--primaryColor)] ">
+    <div className="border border-gray-300 w-60  rounded-lg font-family shadow-md  transiton-transform duration-300 hover:scale-105 cursor-pointer hover:border-[var(--primaryColor)] "
+          onClick={() => navigate(`/products/${id}`)}
+          
+    >
         <div className="bg-gray-100 h-[210px] w-full rounded-lg">
           <img src={image} alt={name} className="h-[100%] w-full " />
         </div>

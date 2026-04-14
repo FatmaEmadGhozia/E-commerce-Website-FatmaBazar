@@ -1,6 +1,3 @@
-
-
-
 import cookingIcon from "../assets/image_1.jpg";
 import biscuitIcon from "../assets/image_16.jpg";
 import householdIcon from "../assets/image_3.jpg";
@@ -11,8 +8,8 @@ import milkIcon from "../assets/image_7.jpg";
 import drinksIcon from "../assets/image_16.jpg";
 import breakfastIcon from "../assets/image_9.jpg";
 
- import Mint from "../assets/Mint.avif";           
-import  PakaPape from "../assets/image_26.jpg";
+import Mint from "../assets/Mint.avif";
+import PakaPape from "../assets/image_26.jpg";
 import Letuuce from "../assets/image_27.jpg";
 import BiskClub from "../assets/image_28.jpg";
 import Pieapple from "../assets/image_29.jpg";
@@ -28,12 +25,6 @@ import Tomato from "../assets/Tomato.avif";
 import Broccoli from "../assets/Broccoli-.avif";
 import OrangeBiscuit from "../assets/Orange-biscuits.avif";
 import Carot from "../assets/Carrot.avif";
-
-
-
-
-
-
 
 import product1 from "../assets/houes1.avif";
 import product2 from "../assets/house2.avif";
@@ -51,70 +42,389 @@ import product13 from "../assets/house13.avif";
 import product14 from "../assets/house14.avif";
 import product15 from "../assets/house15.avif";
 
-
-
-
-
-
-
- export  const  categories = [
+export const categories = [
   {
     title: "Cooking Essentials",
     items: ["Flour"],
-    icon: cookingIcon
-    
+    icon: cookingIcon,
   },
   {
     title: "Biscuits & Cakes",
     items: ["Biscuits", "Cakes"],
-    icon: biscuitIcon
+    icon: biscuitIcon,
   },
   {
     title: "Household Tools",
     items: ["electronics", "Water Filter", "Cleaning Tools"],
-    icon: householdIcon
-
+    icon: householdIcon,
   },
   {
     title: "Pet Care",
     items: ["Dog Care", "Cat Care"],
-    icon: petIcon
+    icon: petIcon,
   },
   {
     title: "Beauty & Healths",
     items: ["Women", "Men"],
-    icon: beautyIcon
+    icon: beautyIcon,
   },
   {
     title: "Jam & Jelly",
     items: [],
-    icon: jamIcon
-    
+    icon: jamIcon,
   },
   {
     title: "Milk & Dairy",
     items: ["Butter & Ghee", "Ice Cream", "Dairy"],
-    icon: milkIcon
+    icon: milkIcon,
   },
   {
     title: "Drinks",
     items: ["Tea", "Water", "Juice"],
-    icon: drinksIcon
+    icon: drinksIcon,
   },
   {
     title: "Breakfast",
     items: ["Bread", "Cereal"],
-    icon: breakfastIcon
-  }
+    icon: breakfastIcon,
+  },
 ];
 
+//  export const popularProducts = [
+//   {
+//     name: "Mint",
+//     price: 30.78,
+//     rating: 2.9,
+//     reviews: 7,
+//     discount: null,
+//     sold: null,
+//     total: null,
+//     image : Mint
+//   },
+//   {
+//     name: "Clementine",
+//     price: 48.12,
+//     rating: 3.2,
+//     reviews: 10,
+//     discount: null,
+//     sold: null,
+//     total: null,
+//     image : Clementine
 
+//   },
+//   {
+//     name: "Paka Pape",
+//     price: 150.53,
+//     oldPrice: 158.45,
+//     rating: 0.0,
+//     reviews: 0,
+//     discount: "5%",
+//     sold: 62,
+//     total: 100,
+//     image : PakaPape
+//   },
+//   {
+//     name: "Lettuce",
+//     price: 193.26,
+//     rating: 4.0,
+//     reviews: 5,
+//     discount: null,
+//     sold: null,
+//     total: null,
+//     image : Letuuce
+//   },
+//   {
+//     name: "Bisk Club Cream Biscuit",
+//     price: 49.60,
+//     oldPrice: 59.05,
+//     rating: 0.0,
+//     reviews: 0,
+//     discount: "16%",
+//     sold: 68,
+//     total: 100,
+//     image : BiskClub
+//   },
+//   {
+//     name: "Pineapple Imported",
+//     price: 24.00,
+//     oldPrice: 30.00,
+//     rating: 2.9,
+//     reviews: 9,
+//     discount: "20%",
+//     sold: 27,
+//     total: 100,
+//     image : Pieapple
+//   },
+//   {
+//     name: "Organic Pinkerton Avocado",
+//     price: 63.89,
+//     oldPrice: 106.49,
+//     rating: 3.0,
+//     reviews: 3,
+//     discount: "40%",
+//     sold: 50,
+//     total: 100,
+//     image : Avocado
+//   },
+//   {
+//     name: "Premium T-Shirt",
+//     price: 427.50,
+//     oldPrice: 450.00,
+//     rating: 3.6,
+//     reviews: 9,
+//     discount: "5%",
+//     sold: 4,
+//     total: 100,
+//     image : TShirt
+//   },
 
+//   {
+//     name: "Lacinato Dinosaur Kale",
+//     price: 22.36,
+//     oldPrice: 55.91,
+//     rating: 3.5,
+//     reviews: 6,
+//     discount: "60%",
+//     sold: 27,
+//     total: 100,
+//     image : Kale
+//   },
+//   {
+//     name: "Organic Cherry Tomato",
+//     price: 15.56,
+//     rating: 2.2,
+//     reviews: 5,
+//     discount: null,
+//     sold: null,
+//     total: null,
+//     image : Tomato
+//   },
+//   {
+//     name: "Yellow Sweet Corn",
+//     price: 80.97,
+//     rating: 2.6,
+//     reviews: 5,
+//     discount: null,
+//     sold: null,
+//     total: null,
+//     image : Corn
+//   },
+//  {
+//     name: "Organic Baby Carrot",
+//     rating: 4.3,
+//     reviews: 4,
+//     price: 105.00,
+//     originalPrice: 150.00,
+//     discount: "30% Off",
+//     sold: 5,
+//     stock: 100,
+//     image : Carot
 
+//   },
+//   {
+//     name: "Calabaza Squash",
+//     rating: 3.0,
+//     reviews: 6,
+//     price: 98.03,
+//     originalPrice: null,
+//     discount: null,
+//     sold: null,
+//     stock: null,
+//     image : CalaBaza
+//   },
+//   {
+//     name: "Organic Kale",
+//     rating: 2.3,
+//     reviews: 4,
+//     price: 15.06,
+//     originalPrice: null,
+//     discount: null,
+//     sold: null,
+//     stock: null,
+//     image : lKale
+//   },
+//   {
+//     name: "Chinese Broccoli",
+//     rating: 0.0,
+//     reviews: 0,
+//     price: 30.00,
+//     originalPrice: 43.12,
+//     discount: "30% Off",
+//     sold: null,
+//     stock: null,
+//     image : Broccoli
+//   },
+//   {
+//     name: "Danish Orange Biscuit",
+//     rating: 5.0,
+//     reviews: 1,
+//     price: 66.23,
+//     originalPrice: 220.77,
+//     discount: "70% Off",
+//     sold: 22,
+//     stock: 100,
+//     image : OrangeBiscuit
+//   },
+//   {
+//     name: "Fresh Dates",
+//     rating: 0.0,
+//     reviews: 0,
+//     price: 204.28,
+//     originalPrice: 226.98,
+//     discount: "10% Off",
+//     sold: 33,
+//     stock: 50,
+//     image : Dates
+//   }
 
+// ];
 
- export const popularProducts = [
+//  export const HouseholdProducts = [
+
+//   {
+//     name: "Glade Refills Scented",
+//     rating: 0.0,
+//     reviews: 0,
+//     price: 229.97,
+//     originalPrice: null,
+//     discount: null,
+//     image : product1
+//   },
+//   {
+//     name: "d Con Trap Rat",
+//     rating: 0.0,
+//     reviews: 0,
+//     price: 11.81,
+//     originalPrice: null,
+//     discount: null,
+//     image : product2
+//   },
+//   {
+//     name: "Glade Automatic Spray",
+//     rating: 0.0,
+//     reviews: 0,
+//     price: 77.63,
+//     originalPrice: null,
+//     discount: null,
+//     image : product3
+//   },
+//   {
+//     name: "Valu Time Lemon Scent",
+//     rating: 0.0,
+//     reviews: 0,
+//     price: 256.48,
+//     originalPrice: null,
+//     discount: null,
+//     image : product4
+//   },
+//   {
+//     name: "Arm Hammer Detergent",
+//     rating: 0.0,
+//     reviews: 0,
+//     price: 262.08,
+//     originalPrice: null,
+//     discount: null,
+//     image : product5
+//   },
+
+//   // Image 2
+//   {
+//     name: "Arm Hammer Detergent",
+//     rating: 0.0,
+//     reviews: 0,
+//     price: 262.08,
+//     originalPrice: null,
+//     discount: null,
+//     image : product6
+//   },
+//   {
+//     name: "Sophresh",
+//     rating: 0.0,
+//     reviews: 0,
+//     price: 175.85,
+//     originalPrice: null,
+//     discount: null,
+//     image : product7
+//   },
+//   {
+//     name: "Scrub Bob",
+//     rating: 0.0,
+//     reviews: 0,
+//     price: 229.52,
+//     originalPrice: null,
+//     discount: null,
+//     image : product8
+//   },
+//   {
+//     name: "Valu Time Fabric Softener",
+//     rating: 0.0,
+//     reviews: 0,
+//     price: 79.26,
+//     originalPrice: null,
+//     discount: null,
+//     image : product9
+//   },
+//   {
+//     name: "Good Clean Wipes",
+//     rating: 0.0,
+//     reviews: 0,
+//     price: 150.22,
+//     originalPrice: null,
+//     discount: null,
+//     image : product10
+//   // Image 3
+//   },
+//   {
+//     name: "Natures Alchemy Rosewood",
+//     rating: 0.0,
+//     reviews: 0,
+//     price: 133.67,
+//     originalPrice: null,
+//     discount: null,
+//     image : product11
+//   },
+//   {
+//     name: "Leather Automotive Cleaning",
+//     rating: 0.0,
+//     reviews: 0,
+//     price: 264.80,
+//     originalPrice: null,
+//     discount: null,
+//     image : product12
+//   },
+//   {
+//     name: "Open Nature Chlorine",
+//     rating: 0.0,
+//     reviews: 0,
+//     price: 21.62,
+//     originalPrice: null,
+//     discount: null,
+//     image : product13
+//   },
+//   {
+//     name: "Orange Guard Insect Spray",
+//     rating: 0.0,
+//     reviews: 0,
+//     price: 265.21,
+//     originalPrice: null,
+//     discount: null,
+//     image : product14
+//   },
+//   {
+//     name: "Hot Shot Ant Killer",
+//     rating: 0.0,
+//     reviews: 0,
+//     price: 53.40,
+//     originalPrice: null,
+//     discount: null,
+//     image : product15
+//   },
+
+// ];
+
+export const popularProducts = [
   {
+    id: 1,
     name: "Mint",
     price: 30.78,
     rating: 2.9,
@@ -122,9 +432,10 @@ import product15 from "../assets/house15.avif";
     discount: null,
     sold: null,
     total: null,
-    image : Mint
+    image: Mint,
   },
   {
+    id: 2,
     name: "Clementine",
     price: 48.12,
     rating: 3.2,
@@ -132,10 +443,10 @@ import product15 from "../assets/house15.avif";
     discount: null,
     sold: null,
     total: null,
-    image : Clementine
-
+    image: Clementine,
   },
   {
+    id: 3,
     name: "Paka Pape",
     price: 150.53,
     oldPrice: 158.45,
@@ -144,9 +455,10 @@ import product15 from "../assets/house15.avif";
     discount: "5%",
     sold: 62,
     total: 100,
-    image : PakaPape
+    image: PakaPape,
   },
   {
+    id: 4,
     name: "Lettuce",
     price: 193.26,
     rating: 4.0,
@@ -154,31 +466,34 @@ import product15 from "../assets/house15.avif";
     discount: null,
     sold: null,
     total: null,
-    image : Letuuce
+    image: Letuuce,
   },
   {
+    id: 5,
     name: "Bisk Club Cream Biscuit",
-    price: 49.60,
+    price: 49.6,
     oldPrice: 59.05,
     rating: 0.0,
     reviews: 0,
     discount: "16%",
     sold: 68,
     total: 100,
-    image : BiskClub
+    image: BiskClub,
   },
   {
+    id: 6,
     name: "Pineapple Imported",
-    price: 24.00,
-    oldPrice: 30.00,
+    price: 24.0,
+    oldPrice: 30.0,
     rating: 2.9,
     reviews: 9,
     discount: "20%",
     sold: 27,
     total: 100,
-    image : Pieapple
+    image: Pieapple,
   },
   {
+    id: 7,
     name: "Organic Pinkerton Avocado",
     price: 63.89,
     oldPrice: 106.49,
@@ -187,21 +502,22 @@ import product15 from "../assets/house15.avif";
     discount: "40%",
     sold: 50,
     total: 100,
-    image : Avocado
+    image: Avocado,
   },
   {
+    id: 8,
     name: "Premium T-Shirt",
-    price: 427.50,
-    oldPrice: 450.00,
+    price: 427.5,
+    oldPrice: 450.0,
     rating: 3.6,
     reviews: 9,
     discount: "5%",
     sold: 4,
     total: 100,
-    image : TShirt
+    image: TShirt,
   },
-
   {
+    id: 9,
     name: "Lacinato Dinosaur Kale",
     price: 22.36,
     oldPrice: 55.91,
@@ -210,9 +526,10 @@ import product15 from "../assets/house15.avif";
     discount: "60%",
     sold: 27,
     total: 100,
-    image : Kale
+    image: Kale,
   },
   {
+    id: 10,
     name: "Organic Cherry Tomato",
     price: 15.56,
     rating: 2.2,
@@ -220,9 +537,10 @@ import product15 from "../assets/house15.avif";
     discount: null,
     sold: null,
     total: null,
-    image : Tomato
+    image: Tomato,
   },
   {
+    id: 11,
     name: "Yellow Sweet Corn",
     price: 80.97,
     rating: 2.6,
@@ -230,21 +548,22 @@ import product15 from "../assets/house15.avif";
     discount: null,
     sold: null,
     total: null,
-    image : Corn
+    image: Corn,
   },
- {
+  {
+    id: 12,
     name: "Organic Baby Carrot",
     rating: 4.3,
     reviews: 4,
-    price: 105.00,
-    originalPrice: 150.00,
+    price: 105.0,
+    originalPrice: 150.0,
     discount: "30% Off",
     sold: 5,
-    stock: 100, 
-    image : Carot
-    
+    stock: 100,
+    image: Carot,
   },
   {
+    id: 13,
     name: "Calabaza Squash",
     rating: 3.0,
     reviews: 6,
@@ -253,9 +572,10 @@ import product15 from "../assets/house15.avif";
     discount: null,
     sold: null,
     stock: null,
-    image : CalaBaza
+    image: CalaBaza,
   },
   {
+    id: 14,
     name: "Organic Kale",
     rating: 2.3,
     reviews: 4,
@@ -264,20 +584,22 @@ import product15 from "../assets/house15.avif";
     discount: null,
     sold: null,
     stock: null,
-    image : lKale
+    image: lKale,
   },
   {
+    id: 15,
     name: "Chinese Broccoli",
     rating: 0.0,
     reviews: 0,
-    price: 30.00,
+    price: 30.0,
     originalPrice: 43.12,
     discount: "30% Off",
     sold: null,
     stock: null,
-    image : Broccoli
+    image: Broccoli,
   },
   {
+    id: 16,
     name: "Danish Orange Biscuit",
     rating: 5.0,
     reviews: 1,
@@ -286,9 +608,10 @@ import product15 from "../assets/house15.avif";
     discount: "70% Off",
     sold: 22,
     stock: 100,
-    image : OrangeBiscuit
+    image: OrangeBiscuit,
   },
   {
+    id: 17,
     name: "Fresh Dates",
     rating: 0.0,
     reviews: 0,
@@ -297,154 +620,159 @@ import product15 from "../assets/house15.avif";
     discount: "10% Off",
     sold: 33,
     stock: 50,
-    image : Dates
-  }
-  
-
+    image: Dates,
+  },
 ];
 
-
-
-
- export const HouseholdProducts = [
-  
+export const HouseholdProducts = [
   {
+    id: 101,
     name: "Glade Refills Scented",
     rating: 0.0,
     reviews: 0,
     price: 229.97,
     originalPrice: null,
     discount: null,
-    image : product1
+    image: product1,
   },
   {
+    id: 102,
     name: "d Con Trap Rat",
     rating: 0.0,
     reviews: 0,
     price: 11.81,
     originalPrice: null,
     discount: null,
-    image : product2
+    image: product2,
   },
   {
+    id: 103,
     name: "Glade Automatic Spray",
     rating: 0.0,
     reviews: 0,
     price: 77.63,
     originalPrice: null,
     discount: null,
-    image : product3
+    image: product3,
   },
   {
+    id: 104,
     name: "Valu Time Lemon Scent",
     rating: 0.0,
     reviews: 0,
     price: 256.48,
     originalPrice: null,
     discount: null,
-    image : product4
+    image: product4,
   },
   {
+    id: 105,
     name: "Arm Hammer Detergent",
     rating: 0.0,
     reviews: 0,
     price: 262.08,
     originalPrice: null,
     discount: null,
-    image : product5
+    image: product5,
   },
-
-  // Image 2
   {
+    id: 106,
     name: "Arm Hammer Detergent",
     rating: 0.0,
     reviews: 0,
     price: 262.08,
     originalPrice: null,
     discount: null,
-    image : product6
+    image: product6,
   },
   {
+    id: 107,
     name: "Sophresh",
     rating: 0.0,
     reviews: 0,
     price: 175.85,
     originalPrice: null,
     discount: null,
-    image : product7
+    image: product7,
   },
   {
+    id: 108,
     name: "Scrub Bob",
     rating: 0.0,
     reviews: 0,
     price: 229.52,
     originalPrice: null,
     discount: null,
-    image : product8
+    image: product8,
   },
   {
+    id: 109,
     name: "Valu Time Fabric Softener",
     rating: 0.0,
     reviews: 0,
     price: 79.26,
     originalPrice: null,
     discount: null,
-    image : product9
+    image: product9,
   },
   {
+    id: 110,
     name: "Good Clean Wipes",
     rating: 0.0,
     reviews: 0,
     price: 150.22,
     originalPrice: null,
     discount: null,
-    image : product10
-  // Image 3
+    image: product10,
   },
   {
+    id: 111,
     name: "Natures Alchemy Rosewood",
     rating: 0.0,
     reviews: 0,
     price: 133.67,
     originalPrice: null,
     discount: null,
-    image : product11
+    image: product11,
   },
   {
+    id: 112,
     name: "Leather Automotive Cleaning",
     rating: 0.0,
     reviews: 0,
-    price: 264.80,
+    price: 264.8,
     originalPrice: null,
     discount: null,
-    image : product12
+    image: product12,
   },
   {
+    id: 113,
     name: "Open Nature Chlorine",
     rating: 0.0,
     reviews: 0,
     price: 21.62,
     originalPrice: null,
     discount: null,
-    image : product13
+    image: product13,
   },
   {
+    id: 114,
     name: "Orange Guard Insect Spray",
     rating: 0.0,
     reviews: 0,
     price: 265.21,
     originalPrice: null,
     discount: null,
-    image : product14
+    image: product14,
   },
   {
+    id: 115,
     name: "Hot Shot Ant Killer",
     rating: 0.0,
     reviews: 0,
-    price: 53.40,
+    price: 53.4,
     originalPrice: null,
     discount: null,
-    image : product15
+    image: product15,
   },
-  
 ];

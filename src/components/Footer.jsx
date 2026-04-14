@@ -8,8 +8,8 @@ import footerimage2 from "../assets/footer2.avif";
 export default function Footer() {
   return (
     <footer className="font-family mt-15 mx-25">
-  <section className="mb-20">
-        <div className=" grid grid-cols-3 gap-4 mt-40 mx-45" >
+  <section className="mb-20 bg-gray-100 py-10">
+        <div className=" grid grid-cols-3 gap-4  mx-45   " >
           <div>
             <img src={footerimage1} alt=""  />
           </div>
