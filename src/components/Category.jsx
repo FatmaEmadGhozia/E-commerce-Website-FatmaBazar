@@ -4,7 +4,7 @@ import cookingIcon from "../assets/image_1.jpg";
 export default function Category({title,icon,items}) {
   return (
     <>
-      <div className="category flex justify-center items-center gap-5 bg-white p-5 pt-8 rounded-lg w-65  border border-gray-100 hover:border-[var(--primaryColor)] shadow-md cursor-pointer font-family  mt-12" >
+      <div className="category flex justify-center items-center gap-5 bg-white p-5 pt-8 rounded-lg h-35 border border-gray-100 hover:border-[var(--primaryColor)] shadow-md cursor-pointer font-family  mt-12 " >
         <div className=" flex ">
           <img src={icon} alt={title} className="w-10 h-10" />
         </div>
@@ -31,7 +31,7 @@ export default function Category({title,icon,items}) {
                   d="M9 5l7 7-7 7"
                 />
                  </svg>
-                <span className="text-sm text-gray-500 ">{item}</span>
+                <span className="text-sm text-gray-500 lg:text-xsm ">{item}</span>
                      
                  </li>
               )})

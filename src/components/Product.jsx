@@ -9,7 +9,7 @@ export default function Product({ name, price, reviews, image, rating ,id}) {
  
   return (
     <>
-    <div className="border border-gray-300 w-60  rounded-lg font-family shadow-md  transiton-transform duration-300 hover:scale-105 cursor-pointer hover:border-[var(--primaryColor)] "
+    <div className="border border-gray-300 max-h-90  rounded-lg font-family shadow-md  transiton-transform duration-300 hover:scale-105 cursor-pointer hover:border-[var(--primaryColor)] "
           onClick={() => navigate(`/products/${id}`)}
           
     >

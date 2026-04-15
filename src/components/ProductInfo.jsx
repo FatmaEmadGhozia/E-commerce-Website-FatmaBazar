@@ -25,8 +25,8 @@ export default function ProuctInfo({id}) {
      const product = popularProducts.find((p) => p.id == Number(id) )
   return (
     <>
-      <div className="mx-60 mt-15 grid grid-cols-2 gap-6">
-        <div className="">
+      <div className="mx-60  mt-15 grid grid-col-1 gap-6 xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 sm:cols-1 ">
+        <div className=" w-[100%]">
           <p className="mb-5">
             {" "}
             <span>Home </span> <FiChevronLeft className="inline" />
@@ -62,7 +62,7 @@ export default function ProuctInfo({id}) {
           </div>
         </div>
 
-        <div className="px-5">
+        <div className="px-5  ">
           <p className="mt-10">
             <span className="text-gray-700 font-bold mb-2">In stock: </span>{" "}
             <span className="text-green-700 font-bold">545</span>

@@ -8,15 +8,6 @@ import { useState } from "react";
 import { categories } from "../data/data";
 import Category from "./Category";
 
-
-
-
-
-
-
-
-
-
 export default function Main() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -43,7 +34,7 @@ export default function Main() {
 
   return (
     <>
-      <div className="grid grid-cols-[2fr_1.5fr] px-25 mt-7 gap-3 font-inter">
+      <div className="grid grid-cols-[2fr_1.5fr] px-25 mt-7 gap-3 font-inter lg:grid-cols-2  md:grid-cols-1">
         {
           <div
             className=" h-100 rounded  px-15 pt-25"
@@ -159,13 +150,13 @@ export default function Main() {
         </div>
       </div>
 
-      <section className="categories bg-gray-100  mt-7 font-inter font-family h-200 p-15 mx-25">
+      <section className="categories bg-gray-100  mt-7 font-inter font-family  p-15 mx-25">
         <h1 className="text-center text-3xl mb-2">Featured Categories</h1>
         <p className="text-center text-gray-500 text-lg">
           Choose your necessary products from this feature categories.
         </p>
 
-        <div className="grid  grid-cols-5 -gap-y-2 gap-x-1 mt-10  ">
+        <div className="grid  -gap-y-2 gap-x-3 mt-10  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 ">
           {categories.map((cat) => {
             return (
               <Category title={cat.title} icon={cat.icon} items={cat.items} />
@@ -182,11 +173,30 @@ export default function Main() {
           needs <br />
           products from this list and get some special offer with free shipping.
         </p>
-        <div className=" mx-20 products mt-10 grid grid-cols-6 gap-y-10   ">
+        {/* <div className=" mx-20 products mt-10 grid  gap-y-10 gap-x-30 lg:grid-cols-6 md:grid-cols-4  sm:grid-cols-3 ">
           {popularProducts.map((product) => {
             return (
               <Product
                 id ={product.id}
+                name={product.name}
+                price={product.price}
+                oldPrice={product.oldPrice}
+                rating={product.rating}
+                reviews={product.reviews}
+                discount={product.discount}
+                sold={product.sold}
+                total={product.total}
+                image={product.image}
+              />
+            );
+          })}
+        </div> */}
+        <div className="products mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6 px-4  ">
+          {popularProducts.map((product) => {
+            return (
+              <Product
+                key={product.id}
+                id={product.id}
                 name={product.name}
                 price={product.price}
                 oldPrice={product.oldPrice}
@@ -218,7 +228,7 @@ export default function Main() {
             </button>
           </div>
         </div>
-        <div className=" relative grid grid-cols-6 -gap-x-5  mt-15">
+        <div className=" relative grid grid-cols-6 gap-x-5  mt-15   grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
           <FiChevronLeft
             className=" absolute  top-[40%] -left-1 text-2xl  text-gray-500 cursor-pointer bg-white  z-10 rounded-full "
             onClick={handlePrev}
@@ -231,7 +241,7 @@ export default function Main() {
           {visibleProducts.map((product) => {
             return (
               <Product
-                id ={product.id}
+                id={product.id}
                 name={product.name}
                 price={product.price}
                 rating={product.rating}
@@ -277,7 +287,7 @@ export default function Main() {
           {visibleProducts.map((product) => {
             return (
               <Product
-                 id ={product.id}
+                id={product.id}
                 name={product.name}
                 price={product.price}
                 rating={product.rating}
