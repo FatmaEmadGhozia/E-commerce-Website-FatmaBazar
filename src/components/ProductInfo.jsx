@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import { FiStar } from "react-icons/fi";
 import { FiPlus, FiMinus, FiPhone } from "react-icons/fi";
 import { popularProducts } from "../data/data";
+import { useState } from "react";
 import {
   FiTruck,
   FiHome,
@@ -21,8 +22,17 @@ import {
   FaWhatsapp,
 } from "react-icons/fa6";
 
-export default function ProuctInfo({id}) {
-     const product = popularProducts.find((p) => p.id == Number(id) )
+
+export default function ProuctInfo({ id }) {
+  const product = popularProducts.find((p) => p.id == Number(id));
+  const [Quantity, setQauntity] = useState(1);
+
+  function handlePlus() {
+    setQauntity((prev) => prev + 1);
+  }
+  function handleMinus() {
+    setQauntity((prev) => prev > 1 ? prev - 1 : 1);
+  }
   return (
     <>
       <div className="mx-60  mt-15 grid grid-col-1 gap-6 xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 sm:cols-1 ">
@@ -30,7 +40,9 @@ export default function ProuctInfo({id}) {
           <p className="mb-5">
             {" "}
             <span>Home </span> <FiChevronLeft className="inline" />
-            <span>{product.name}</span> <FiChevronLeft className="inline" />{" "}
+            <span>
+              {product.name}
+            </span> <FiChevronLeft className="inline" />{" "}
             <span>Fresh flour</span>
           </p>
           <div className=" bg-gray-100 flex items-center justify-center border border-gray-300 rounded-lg h-170 w-[90%] shadow-sm">
@@ -86,15 +98,15 @@ export default function ProuctInfo({id}) {
           <div className="flex gap-3">
             <div className="flex border border-gray-300 w-[50%] h-12 text-md items-center rounded-md overflow-hidden">
               <div className="flex justify-center items-center border-r border-gray-300 w-1/4 h-full hover:bg-gray-100">
-                <FiMinus />
+                <FiMinus onClick={ handleMinus} />
               </div>
 
               <div className="flex justify-center items-center w-1/2 font-bold text-lg">
-                1
+                {Quantity}
               </div>
 
               <div className="flex justify-center items-center border-l border-gray-300 w-1/4 h-full hover:bg-gray-100">
-                <FiPlus />
+                <FiPlus onClick={ handlePlus} />
               </div>
             </div>
             <div className="inline-block w-[50%]">
