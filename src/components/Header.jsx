@@ -9,7 +9,7 @@ import { FiShoppingCart ,FiBell ,  FiUser } from "react-icons/fi";
   return (
    <>
      
-     <div className=" px-60 header w-full h-18 bg-[var(--primaryColor)] flex items-center gap-20  ">
+     <div className=" xl:px-60 lg:px-10 md:px-10 header w-full h-18 bg-[var(--primaryColor)] flex items-center gap-20  ">
         <div className="Logo ">
            
         

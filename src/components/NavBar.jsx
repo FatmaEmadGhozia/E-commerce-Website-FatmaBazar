@@ -32,7 +32,7 @@ export default function NavBar() {
   return (
     <>
       <nav className="mt-3">
-        <ul className="flex gap-10 px-60 font-inter font-bold items-center">
+        <ul className="flex gap-10 xl:px-60 md:px-10 font-inter font-bold items-center">
           
           {/* Custom Select */}
           <li className="relative">
