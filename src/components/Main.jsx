@@ -159,7 +159,7 @@ export default function Main() {
         <div className="grid  -gap-y-2 gap-x-3 mt-10  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 ">
           {categories.map((cat) => {
             return (
-              <Category title={cat.title} icon={cat.icon} items={cat.items} />
+              <Category  id = {cat.id } title={cat.title} icon={cat.icon} items={cat.items} />
             );
           })}
         </div>

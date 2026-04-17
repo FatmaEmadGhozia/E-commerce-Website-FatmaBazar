@@ -15,9 +15,12 @@ const routes = createBrowserRouter([
         path:'/products/:id' , element : <ProductDetails/>
       },
       {
-        path: '/cateogries:id' , element : <AllProducts/>
+        path: '/cateogries/:id' , element : <AllProducts/>
       },
  
+      
+
+    
 ]
 
 
@@ -27,13 +30,13 @@ const routes = createBrowserRouter([
 
 
 createRoot(document.getElementById('root')).render(
-   <BrowserRouter>
+  //  <BrowserRouter>
   <StrictMode>
-    {/* <RouterProvider router= {routes} /> */}
-    <AllProducts/>
+    <RouterProvider router= {routes} />
+    {/* <AllProducts/> */}
   
   </StrictMode>
-  </BrowserRouter>
+  // </BrowserRouter>
 )
 
 

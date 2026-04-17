@@ -2,6 +2,7 @@
 import Logo from '../assets/logo-light.svg';
 import { FiSearch } from "react-icons/fi";
 import { FiShoppingCart ,FiBell ,  FiUser } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 
 
@@ -13,7 +14,7 @@ import { FiShoppingCart ,FiBell ,  FiUser } from "react-icons/fi";
         <div className="Logo ">
            
         
-            <img src={Logo} alt="ShopEase Logo" className='w-30 h-30'/>
+           <Link to="/"> <img src={Logo} alt="ShopEase Logo" className='w-30 h-30'/> </Link>
         </div>
         <div className=" relative search w-100 ">
             <input type="text" placeholder="Search for products..."  className='  bg-slate-50 h-11 rounded-md w-200 px-5 border border-gray-300'

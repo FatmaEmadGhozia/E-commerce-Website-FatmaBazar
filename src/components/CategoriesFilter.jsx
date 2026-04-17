@@ -146,6 +146,7 @@ import Product from "../components/Product"
 import { popularProducts } from "../data/data";
 import { FiChevronLeft, FiChevronRight, FiGrid, FiList } from "react-icons/fi";
 
+
 export default function CategoriesFilter({ products = [] }) {
   const [count, setCount] = useState(0);
   const [viewMode, setViewMode] = useState("grid"); // "grid" | "list"
@@ -197,7 +198,7 @@ export default function CategoriesFilter({ products = [] }) {
       </div> */}
 
       
-       <div className="mt-18 relativem mb-15 ">
+       <div className="mt-18 relative mb-15 ">
            <FiChevronLeft
             className=" text-4xl absolute left-5 top-2  bg-gray-100 rounded-2xl font-bold text-gray-500 flex items-center justify-center p-2"
            onClick={() => handlePrev()} />
@@ -232,7 +233,7 @@ export default function CategoriesFilter({ products = [] }) {
       <div className="grid grid-cols-[1fr_4fr] min-h-screen">
 
         {/* ── Sidebar ── */}
-        <aside className="bg-white border-r border-gray-200 p-5">
+        <aside className="bg-white border-r border-gray-200 p-5 sticky top-0">
           <p className="text-xs font-bold tracking-widest text-gray-400 uppercase mb-4">
             Filters
           </p>
@@ -305,7 +306,7 @@ export default function CategoriesFilter({ products = [] }) {
         {/* ── Products Area ── */}
         <main className="p-6">
           {/* Toolbar */}
-          <div className="flex items-center gap-3 mb-5">
+          <div className="flex items-center gap-3 mb-5 bg-white p-5 shadow-sm border border-gray-300">
             {/* View toggle */}
             <div className="flex border border-gray-200 rounded-lg overflow-hidden">
               <button
@@ -322,13 +323,13 @@ export default function CategoriesFilter({ products = [] }) {
               </button>
             </div>
 
-            <span className="text-sm text-gray-500 flex-1">{products.length} results</span>
+            <span className="text-sm text-gray-500 flex-1">{popularProducts.length} results</span>
 
             <span className="text-sm text-gray-500">Sort by:</span>
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="border border-gray-300 rounded-lg px-3 py-1.5 text-sm bg-white"
+              className="border border-gray-300 p-2 rounded-lg px-3 py-1.5 text-sm bg-white"
             >
               <option value="featured">Featured</option>
               <option value="price-asc">Price: Low to High</option>
@@ -346,7 +347,7 @@ export default function CategoriesFilter({ products = [] }) {
             }
           >
             {popularProducts.map((product) => (
-              <Product id={product.id} title={product.title} price = {product.price} reviews = {product.reviews} icon= {product.icon} />
+              <Product id={product.id} name={product.name} price = {product.price} reviews = {product.reviews} image= {product.image} />
             ))}
           </div>
         </main>

@@ -44,46 +44,55 @@ import product15 from "../assets/house15.avif";
 
 export const categories = [
   {
+    id : 1,
     title: "Cooking Essentials",
     items: ["Flour"],
     icon: cookingIcon,
   },
   {
+     id : 2,
     title: "Biscuits & Cakes",
     items: ["Biscuits", "Cakes"],
     icon: biscuitIcon,
   },
   {
+     id : 3,
     title: "Household Tools",
     items: ["electronics", "Water Filter", "Cleaning Tools"],
     icon: householdIcon,
   },
   {
+     id : 4,
     title: "Pet Care",
     items: ["Dog Care", "Cat Care"],
     icon: petIcon,
   },
   {
+     id : 5,
     title: "Beauty & Healths",
     items: ["Women", "Men"],
     icon: beautyIcon,
   },
   {
+     id : 6,
     title: "Jam & Jelly",
     items: [],
     icon: jamIcon,
   },
   {
+     id : 7,
     title: "Milk & Dairy",
     items: ["Butter & Ghee", "Ice Cream", "Dairy"],
     icon: milkIcon,
   },
   {
+     id : 8,
     title: "Drinks",
     items: ["Tea", "Water", "Juice"],
     icon: drinksIcon,
   },
   {
+     id : 9,
     title: "Breakfast",
     items: ["Bread", "Cereal"],
     icon: breakfastIcon,
