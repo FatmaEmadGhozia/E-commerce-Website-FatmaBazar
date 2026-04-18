@@ -31,10 +31,11 @@ export default function Main() {
       Math.max(0, currentIndex + 6 - HouseholdProducts.length),
     ),
   );
+  
 
   return (
     <>
-      <div className="grid grid-cols-[2fr_1.5fr] px-25 mt-7 gap-3 font-inter lg:grid-cols-2  md:grid-cols-1">
+      <div className="grid grid-cols-[1.8fr_1fr] px-25 mt-7 gap-3 font-inter lg:grid-cols-2  md:grid-cols-1">
         {
           <div
             className=" h-100 rounded  px-15 pt-25"
@@ -234,7 +235,7 @@ export default function Main() {
             onClick={handlePrev}
           />
           <FiChevronRight
-            className="absolute top-[40%] right-3 text-3xl text-gray-500 bg-red-100 bg-white cursor-pointer z-10"
+            className="absolute top-[40%] right-0 text-3xl text-gray-500 bg-red-100 bg-white cursor-pointer z-10"
             onClick={handleNext}
           />
 
@@ -274,13 +275,13 @@ export default function Main() {
             </button>
           </div>
         </div>
-        <div className=" relative grid grid-cols-6 -gap-x-5 mt-15">
+        <div className=" relative grid grid-cols-6 gap-x-3 mt-15">
           <FiChevronLeft
             className=" absolute  top-[40%] -left-1 text-3xl text-gray-500 cursor-pointer bg-white  z-10 "
             onClick={handlePrev}
           />
           <FiChevronRight
-            className="absolute top-[40%] right-3 text-3xl text-gray-500 bg-red-100 bg-white cursor-pointer z-10"
+            className="absolute top-[40%] right-0 text-3xl text-gray-500 bg-red-100 bg-white cursor-pointer z-10"
             onClick={handleNext}
           />
 
