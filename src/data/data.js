@@ -1,458 +1,4 @@
-// import cookingIcon from "../assets/image_1.jpg";
-// import biscuitIcon from "../assets/image_16.jpg";
-// import householdIcon from "../assets/image_3.jpg";
-// import petIcon from "../assets/image_18.jpg";
-// import beautyIcon from "../assets/image_5.jpg";
-// import jamIcon from "../assets/image_6.jpg";
-// import milkIcon from "../assets/image_7.jpg";
-// import drinksIcon from "../assets/image_16.jpg";
-// import breakfastIcon from "../assets/image_9.jpg";
 
-// import Mint from "../assets/Mint.avif";
-// import PakaPape from "../assets/image_26.jpg";
-// import Letuuce from "../assets/image_27.jpg";
-// import BiskClub from "../assets/image_28.jpg";
-// import Pieapple from "../assets/image_29.jpg";
-// import Avocado from "../assets/image_30.jpg";
-// import TShirt from "../assets/image_31.jpg";
-// import lKale from "../assets/image_33.jpg";
-// import Corn from "../assets/image_35.jpg";
-// import Clementine from "../assets/image_25.jpg";
-// import CalaBaza from "../assets/image_37.jpg";
-// import Kale from "../assets/image_38.jpg";
-// import Dates from "../assets/image_41.jpg";
-// import Tomato from "../assets/Tomato.avif";
-// import Broccoli from "../assets/Broccoli-.avif";
-// import OrangeBiscuit from "../assets/Orange-biscuits.avif";
-// import Carot from "../assets/Carrot.avif";
-
-// import product1 from "../assets/houes1.avif";
-// import product2 from "../assets/house2.avif";
-// import product3 from "../assets/house3.avif";
-// import product4 from "../assets/house4.avif";
-// import product5 from "../assets/house5.avif";
-// import product6 from "../assets/house6.avif";
-// import product7 from "../assets/house7.avif";
-// import product8 from "../assets/house8.avif";
-// import product9 from "../assets/house9.avif";
-// import product10 from "../assets/house10.avif";
-// import product11 from "../assets/house11.avif";
-// import product12 from "../assets/house12.avif";
-// import product13 from "../assets/house13.avif";
-// import product14 from "../assets/house14.avif";
-// import product15 from "../assets/house15.avif";
-
-// export const categories = [
-//   {
-//     id : 1,
-//     title: "Cooking Essentials",
-//     items: ["Flour"],
-//     icon: cookingIcon,
-//   },
-//   {
-//      id : 2,
-//     title: "Biscuits & Cakes",
-//     items: ["Biscuits", "Cakes"],
-//     icon: biscuitIcon,
-//   },
-//   {
-//      id : 3,
-//     title: "Household Tools",
-//     items: ["electronics", "Water Filter", "Cleaning Tools"],
-//     icon: householdIcon,
-//   },
-//   {
-//      id : 4,
-//     title: "Pet Care",
-//     items: ["Dog Care", "Cat Care"],
-//     icon: petIcon,
-//   },
-//   {
-//      id : 5,
-//     title: "Beauty & Healths",
-//     items: ["Women", "Men"],
-//     icon: beautyIcon,
-//   },
-//   {
-//      id : 6,
-//     title: "Jam & Jelly",
-//     items: [],
-//     icon: jamIcon,
-//   },
-//   {
-//      id : 7,
-//     title: "Milk & Dairy",
-//     items: ["Butter & Ghee", "Ice Cream", "Dairy"],
-//     icon: milkIcon,
-//   },
-//   {
-//      id : 8,
-//     title: "Drinks",
-//     items: ["Tea", "Water", "Juice"],
-//     icon: drinksIcon,
-//   },
-//   {
-//      id : 9,
-//     title: "Breakfast",
-//     items: ["Bread", "Cereal"],
-//     icon: breakfastIcon,
-//   },
-// ];
-
-// export const popularProducts = [
-//   {
-//     id: 1,
-//     name: "Mint",
-//     price: 30.78,
-//     rating: 2.9,
-//     reviews: 7,
-//     discount: null,
-//     sold: null,
-//     total: null,
-//     image: Mint,
-//   },
-//   {
-//     id: 2,
-//     name: "Clementine",
-//     price: 48.12,
-//     rating: 3.2,
-//     reviews: 10,
-//     discount: null,
-//     sold: null,
-//     total: null,
-//     image: Clementine,
-//   },
-//   {
-//     id: 3,
-//     name: "Paka Pape",
-//     price: 150.53,
-//     oldPrice: 158.45,
-//     rating: 0.0,
-//     reviews: 0,
-//     discount: "5%",
-//     sold: 62,
-//     total: 100,
-//     image: PakaPape,
-//   },
-//   {
-//     id: 4,
-//     name: "Lettuce",
-//     price: 193.26,
-//     rating: 4.0,
-//     reviews: 5,
-//     discount: null,
-//     sold: null,
-//     total: null,
-//     image: Letuuce,
-//   },
-//   {
-//     id: 5,
-//     name: "Bisk Club Cream Biscuit",
-//     price: 49.6,
-//     oldPrice: 59.05,
-//     rating: 0.0,
-//     reviews: 0,
-//     discount: "16%",
-//     sold: 68,
-//     total: 100,
-//     image: BiskClub,
-//   },
-//   {
-//     id: 6,
-//     name: "Pineapple Imported",
-//     price: 24.0,
-//     oldPrice: 30.0,
-//     rating: 2.9,
-//     reviews: 9,
-//     discount: "20%",
-//     sold: 27,
-//     total: 100,
-//     image: Pieapple,
-//   },
-//   {
-//     id: 7,
-//     name: "Organic Pinkerton Avocado",
-//     price: 63.89,
-//     oldPrice: 106.49,
-//     rating: 3.0,
-//     reviews: 3,
-//     discount: "40%",
-//     sold: 50,
-//     total: 100,
-//     image: Avocado,
-//   },
-//   {
-//     id: 8,
-//     name: "Premium T-Shirt",
-//     price: 427.5,
-//     oldPrice: 450.0,
-//     rating: 3.6,
-//     reviews: 9,
-//     discount: "5%",
-//     sold: 4,
-//     total: 100,
-//     image: TShirt,
-//   },
-//   {
-//     id: 9,
-//     name: "Lacinato Dinosaur Kale",
-//     price: 22.36,
-//     oldPrice: 55.91,
-//     rating: 3.5,
-//     reviews: 6,
-//     discount: "60%",
-//     sold: 27,
-//     total: 100,
-//     image: Kale,
-//   },
-//   {
-//     id: 10,
-//     name: "Organic Cherry Tomato",
-//     price: 15.56,
-//     rating: 2.2,
-//     reviews: 5,
-//     discount: null,
-//     sold: null,
-//     total: null,
-//     image: Tomato,
-//   },
-//   {
-//     id: 11,
-//     name: "Yellow Sweet Corn",
-//     price: 80.97,
-//     rating: 2.6,
-//     reviews: 5,
-//     discount: null,
-//     sold: null,
-//     total: null,
-//     image: Corn,
-//   },
-//   {
-//     id: 12,
-//     name: "Organic Baby Carrot",
-//     rating: 4.3,
-//     reviews: 4,
-//     price: 105.0,
-//     originalPrice: 150.0,
-//     discount: "30% Off",
-//     sold: 5,
-//     stock: 100,
-//     image: Carot,
-//   },
-//   {
-//     id: 13,
-//     name: "Calabaza Squash",
-//     rating: 3.0,
-//     reviews: 6,
-//     price: 98.03,
-//     originalPrice: null,
-//     discount: null,
-//     sold: null,
-//     stock: null,
-//     image: CalaBaza,
-//   },
-//   {
-//     id: 14,
-//     name: "Organic Kale",
-//     rating: 2.3,
-//     reviews: 4,
-//     price: 15.06,
-//     originalPrice: null,
-//     discount: null,
-//     sold: null,
-//     stock: null,
-//     image: lKale,
-//   },
-//   {
-//     id: 15,
-//     name: "Chinese Broccoli",
-//     rating: 0.0,
-//     reviews: 0,
-//     price: 30.0,
-//     originalPrice: 43.12,
-//     discount: "30% Off",
-//     sold: null,
-//     stock: null,
-//     image: Broccoli,
-//   },
-//   {
-//     id: 16,
-//     name: "Danish Orange Biscuit",
-//     rating: 5.0,
-//     reviews: 1,
-//     price: 66.23,
-//     originalPrice: 220.77,
-//     discount: "70% Off",
-//     sold: 22,
-//     stock: 100,
-//     image: OrangeBiscuit,
-//   },
-//   {
-//     id: 17,
-//     name: "Fresh Dates",
-//     rating: 0.0,
-//     reviews: 0,
-//     price: 204.28,
-//     originalPrice: 226.98,
-//     discount: "10% Off",
-//     sold: 33,
-//     stock: 50,
-//     image: Dates,
-//   },
-// ];
-
-// export const HouseholdProducts = [
-//   {
-//     id: 101,
-//     name: "Glade Refills Scented",
-//     rating: 0.0,
-//     reviews: 0,
-//     price: 229.97,
-//     originalPrice: null,
-//     discount: null,
-//     image: product1,
-//   },
-//   {
-//     id: 102,
-//     name: "d Con Trap Rat",
-//     rating: 0.0,
-//     reviews: 0,
-//     price: 11.81,
-//     originalPrice: null,
-//     discount: null,
-//     image: product2,
-//   },
-//   {
-//     id: 103,
-//     name: "Glade Automatic Spray",
-//     rating: 0.0,
-//     reviews: 0,
-//     price: 77.63,
-//     originalPrice: null,
-//     discount: null,
-//     image: product3,
-//   },
-//   {
-//     id: 104,
-//     name: "Valu Time Lemon Scent",
-//     rating: 0.0,
-//     reviews: 0,
-//     price: 256.48,
-//     originalPrice: null,
-//     discount: null,
-//     image: product4,
-//   },
-//   {
-//     id: 105,
-//     name: "Arm Hammer Detergent",
-//     rating: 0.0,
-//     reviews: 0,
-//     price: 262.08,
-//     originalPrice: null,
-//     discount: null,
-//     image: product5,
-//   },
-//   {
-//     id: 106,
-//     name: "Arm Hammer Detergent",
-//     rating: 0.0,
-//     reviews: 0,
-//     price: 262.08,
-//     originalPrice: null,
-//     discount: null,
-//     image: product6,
-//   },
-//   {
-//     id: 107,
-//     name: "Sophresh",
-//     rating: 0.0,
-//     reviews: 0,
-//     price: 175.85,
-//     originalPrice: null,
-//     discount: null,
-//     image: product7,
-//   },
-//   {
-//     id: 108,
-//     name: "Scrub Bob",
-//     rating: 0.0,
-//     reviews: 0,
-//     price: 229.52,
-//     originalPrice: null,
-//     discount: null,
-//     image: product8,
-//   },
-//   {
-//     id: 109,
-//     name: "Valu Time Fabric Softener",
-//     rating: 0.0,
-//     reviews: 0,
-//     price: 79.26,
-//     originalPrice: null,
-//     discount: null,
-//     image: product9,
-//   },
-//   {
-//     id: 110,
-//     name: "Good Clean Wipes",
-//     rating: 0.0,
-//     reviews: 0,
-//     price: 150.22,
-//     originalPrice: null,
-//     discount: null,
-//     image: product10,
-//   },
-//   {
-//     id: 111,
-//     name: "Natures Alchemy Rosewood",
-//     rating: 0.0,
-//     reviews: 0,
-//     price: 133.67,
-//     originalPrice: null,
-//     discount: null,
-//     image: product11,
-//   },
-//   {
-//     id: 112,
-//     name: "Leather Automotive Cleaning",
-//     rating: 0.0,
-//     reviews: 0,
-//     price: 264.8,
-//     originalPrice: null,
-//     discount: null,
-//     image: product12,
-//   },
-//   {
-//     id: 113,
-//     name: "Open Nature Chlorine",
-//     rating: 0.0,
-//     reviews: 0,
-//     price: 21.62,
-//     originalPrice: null,
-//     discount: null,
-//     image: product13,
-//   },
-//   {
-//     id: 114,
-//     name: "Orange Guard Insect Spray",
-//     rating: 0.0,
-//     reviews: 0,
-//     price: 265.21,
-//     originalPrice: null,
-//     discount: null,
-//     image: product14,
-//   },
-//   {
-//     id: 115,
-//     name: "Hot Shot Ant Killer",
-//     rating: 0.0,
-//     reviews: 0,
-//     price: 53.4,
-//     originalPrice: null,
-//     discount: null,
-//     image: product15,
-//   },
-// ];
 
 import cookingIcon from "../assets/image_1.jpg";
 import biscuitIcon from "../assets/image_16.jpg";
@@ -575,9 +121,48 @@ export const categories = [
 import salt from '../assets/ACI-Pure-Salt.avif';
 import Aarong_Kataribhog_Rice from '../assets/Aarong-Kataribhog-Rice.avif'
 
+import Fresh_Flour from '../assets/Fresh-flour.avif';
+import ACI_Pure_Flour from '../assets/ACI-Pure-flour.avif';
+import ACI_Nutrilife_Oats_Flour from '../assets/ACI-Nutrilife-Oats-flour.avif';
+import ACI_Nutrilife_Flour from '../assets/ACI-Nutrilife-flour.avif';
+import ACI_Pure_Mustard_Oil from '../assets/ACI-Pure-Mustard-Oil.avif';
+import ACI_Aroma_Mustard_Oil from '../assets/ACI-Aroma-Mustard-Oi.avif';
+import Chinigura_Premium_Rice from '../assets/Chinigura-Premium-Rice.avif';
+import Aarong_Nazirshail_Rice from '../assets/Aarong-Nazirshail-Rice.avif';
+import Fresh_Chinigura_Rice from '../assets/Fresh-Chinigura-Rice.avif';
+import Fortune_Rice_Bran_Oil from '../assets/Fortune-Rice-Bran-Oi.avif';
+import flour from '../assets/flour.avif';
+import Fresh_Soyabean_Oil from '../assets/Fresh-Soyabean-Oil.avif'
+import Fresh_Mustard_Oil from '../assets/Fresh-Mustard-Oil.avif'
+import Kalijira_Premium_Rice from '../assets/Kalijira-Premium-Rice.avif'
 
 
 
+
+import Dan_Cake_Lemon_Pound_Cake from '../assets/Dan-Cake-Lemon-Pound-Cake.avif';
+import Dan_Cake_Chocolate_Pound from '../assets/Dan-Cake-chocolate-Pound.avif';
+import Dan_Cake_Chocolate from '../assets/Dan-Cake-chocolate.avif';
+import Dan_Cake_Vanilla_Layer_Cake from '../assets/Dan-Cake-Vanilla-Layer-Cake.avif';
+import Fun_Milk_Wafer_Biscuit from '../assets/2-Fun-Milk-Wafer-Biscuit.avif';
+import Dekko_Ovaltine_Cookies from '../assets/Dekko-Ovaltine-Cookies-biscuits.avif';
+import Bisk_Club_Shero_Cream from '../assets/Bisk-Club-Shero-Cream-Biscuit.avif';
+import Bisk_Club_Fit_Masala from '../assets/Bisk-Club-Fit-Masala-Flavor.avif';
+import Dan_Cake_Chocolate_Layer_Cake from '../assets/Dan-Cake-chocolate-Layer-Cake.avif';
+
+
+
+import Cat_Toy from '../assets/Cat-Toy.avif';
+import Halloween_Dog_Taco from '../assets/Halloween-Dog-Taco.avif';
+import Hill_Science_Diet_Dog from '../assets/Hill-s-Science-Diet-Dog.avif';
+import Colorado_Dog_Collar from '../assets/Colorado-Dog-Collar.avif';
+import Bling_Dog_Collar from '../assets/Bling-Dog-Colla.avif';
+import Multipack_Ball_Cat_Toy from '../assets/Multipack-Ball-Cat-Toy.avif';
+import Pet_Safe_Elite from '../assets/Pet-Safe-Elite.avif';
+import Popsicle_Dog_Collar from '../assets/Popsicle-Dog-Collar.avif';
+import Premium_Cat_Food from '../assets/Premium-Cat-Food.avif';
+import Royal_Canin_Dog_Food from '../assets/Royal-Canin-Adult-Dog-Food.avif';
+import Water_Blue_Pin_Brush from '../assets/Water-Blue-Pin-Brush.avif';
+import So_Phresh_Pink_Scoopable from '../assets/So-Phresh-Pink-Scoopable.avif'
 
 
 
@@ -586,6 +171,7 @@ import Aarong_Kataribhog_Rice from '../assets/Aarong-Kataribhog-Rice.avif'
 
 
 // ─── 1. COOKING ESSENTIALS ──────────────────────────────────────────────────
+
 export const cookingProducts = [
   {
     id: 1,
@@ -607,7 +193,7 @@ export const cookingProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Cooking Essentials",
-    image: img("Fresh Flour"),
+    image: Fresh_Flour,
   },
   {
     id: 3,
@@ -616,16 +202,16 @@ export const cookingProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Cooking Essentials",
-    image: img("ACI Pure Flour"),
+    image: ACI_Pure_Flour,
   },
   {
     id: 4,
-    name: "ACI Pure Flour (2kg)",
+    name: "ACI Nutrilife Flour",
     price: 98.09,
     rating: 0.0,
     reviews: 0,
     category: "Cooking Essentials",
-    image: img("ACI Pure Flour 2kg"),
+    image: ACI_Nutrilife_Flour,
   },
   {
     id: 5,
@@ -634,7 +220,7 @@ export const cookingProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Cooking Essentials",
-    image: img("ACI Nutrilife Oats Flour"),
+    image: ACI_Nutrilife_Oats_Flour,
   },
   {
     id: 6,
@@ -643,7 +229,7 @@ export const cookingProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Cooking Essentials",
-    image: img("ACI Nutrilife Flour"),
+    image: ACI_Nutrilife_Flour,
   },
   {
     id: 7,
@@ -652,7 +238,7 @@ export const cookingProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Cooking Essentials",
-    image: img("Fresh Soyabean Oil"),
+    image: Fresh_Soyabean_Oil,
   },
   {
     id: 8,
@@ -661,7 +247,7 @@ export const cookingProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Cooking Essentials",
-    image: img("Fresh Mustard Oil"),
+    image: Fresh_Mustard_Oil,
   },
   {
     id: 9,
@@ -670,7 +256,7 @@ export const cookingProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Cooking Essentials",
-    image: img("Fortune Oil"),
+    image: Fortune_Rice_Bran_Oil,
   },
   {
     id: 10,
@@ -679,7 +265,7 @@ export const cookingProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Cooking Essentials",
-    image: img("ACI Pure Mustard Oil"),
+    image: ACI_Pure_Mustard_Oil,
   },
   {
     id: 11,
@@ -688,7 +274,7 @@ export const cookingProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Cooking Essentials",
-    image: img("ACI Aroma Mustard Oil"),
+    image: ACI_Aroma_Mustard_Oil,
   },
   {
     id: 12,
@@ -697,7 +283,7 @@ export const cookingProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Cooking Essentials",
-    image: img("Kalijira Premium Rice"),
+    image: Kalijira_Premium_Rice,
   },
   {
     id: 13,
@@ -706,7 +292,7 @@ export const cookingProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Cooking Essentials",
-    image: img("Fresh Chinigura Rice"),
+    image: Fresh_Chinigura_Rice,
   },
   {
     id: 14,
@@ -715,7 +301,7 @@ export const cookingProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Cooking Essentials",
-    image: img("Chinigura Premium Rice"),
+    image: Chinigura_Premium_Rice,
   },
   {
     id: 15,
@@ -724,7 +310,7 @@ export const cookingProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Cooking Essentials",
-    image: img("Aarong Nazirshail Rice"),
+    image: Aarong_Nazirshail_Rice,
   },
   {
     id: 16,
@@ -737,7 +323,6 @@ export const cookingProducts = [
   },
 ];
 
-// ─── 2. BISCUITS & CAKES ────────────────────────────────────────────────────
 export const biscuitProducts = [
   {
     id: 51,
@@ -746,7 +331,7 @@ export const biscuitProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Biscuits & Cakes",
-    image: img("Dan Cake Lemon"),
+    image: Dan_Cake_Lemon_Pound_Cake,
   },
   {
     id: 52,
@@ -755,7 +340,7 @@ export const biscuitProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Biscuits & Cakes",
-    image: img("Dan Cake Pound"),
+    image: Dan_Cake_Chocolate_Pound,
   },
   {
     id: 53,
@@ -764,7 +349,7 @@ export const biscuitProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Biscuits & Cakes",
-    image: img("Dan Cake Muffin"),
+    image: Dan_Cake_Chocolate_Layer_Cake,
   },
   {
     id: 54,
@@ -773,7 +358,7 @@ export const biscuitProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Biscuits & Cakes",
-    image: img("Dan Cake"),
+    image: Dan_Cake_Chocolate,
   },
   {
     id: 55,
@@ -799,7 +384,7 @@ export const biscuitProducts = [
     sold: 68,
     stock: 100,
     category: "Biscuits & Cakes",
-    image: BiskClub,
+    image: Bisk_Club_Shero_Cream,
   },
   {
     id: 57,
@@ -808,7 +393,7 @@ export const biscuitProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Biscuits & Cakes",
-    image: img("Fun Milk Wafer Biscuit"),
+    image: Fun_Milk_Wafer_Biscuit,
   },
   {
     id: 58,
@@ -817,7 +402,7 @@ export const biscuitProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Biscuits & Cakes",
-    image: img("Ovaltine Biscuit"),
+    image: Dekko_Ovaltine_Cookies,
   },
   {
     id: 59,
@@ -830,7 +415,7 @@ export const biscuitProducts = [
     sold: 80,
     stock: 100,
     category: "Biscuits & Cakes",
-    image: img("Delish Biscuit"),
+    image: Bisk_Club_Fit_Masala,
   },
   {
     id: 60,
@@ -839,9 +424,14 @@ export const biscuitProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Biscuits & Cakes",
-    image: img("Chocolate Bar"),
+    image: Dan_Cake_Vanilla_Layer_Cake,
   },
 ];
+
+
+
+
+// ─── 2. BISCUITS & CAKES ────────────────────────────────────────────────────
 
 // ─── 3. HOUSEHOLD TOOLS ─────────────────────────────────────────────────────
 export const householdProductsData = [
@@ -1091,25 +681,157 @@ export const householdProductsData = [
 ];
 
 // ─── 4. PET CARE ────────────────────────────────────────────────────────────
+// export const petProducts = [
+//   {
+//     id: 151,
+//     name: "Paradise Toys",
+//     price: 48.84,
+//     rating: 0.0,
+//     reviews: 0,
+//     category: "Pet Care",
+//     image: img("Paradise Toys"),
+//   },
+//   {
+//     id: 152,
+//     name: "Kaytee Bird Food",
+//     price: 13.99,
+//     rating: 0.0,
+//     reviews: 0,
+//     category: "Pet Care",
+//     image: img("Kaytee Bird Food"),
+//   },
+//   {
+//     id: 153,
+//     name: "Sophresh Cat Food",
+//     price: 210.67,
+//     rating: 0.0,
+//     reviews: 0,
+//     category: "Pet Care",
+//     image: img("Sophresh Cat Food"),
+//   },
+//   {
+//     id: 154,
+//     name: "Cat Toy",
+//     price: 256.61,
+//     rating: 0.0,
+//     reviews: 0,
+//     category: "Pet Care",
+//     image: img("Cat Toy"),
+//   },
+//   {
+//     id: 155,
+//     name: "Multipack Ball Cat Toy",
+//     price: 46.63,
+//     rating: 0.0,
+//     reviews: 0,
+//     category: "Pet Care",
+//     image: img("Ball Cat Toy"),
+//   },
+//   {
+//     id: 156,
+//     name: "Leaps Bounds Cat Toy",
+//     price: 72.5,
+//     rating: 0.0,
+//     reviews: 0,
+//     category: "Pet Care",
+//     image: img("Leaps Bounds"),
+//   },
+//   {
+//     id: 157,
+//     name: "Premium Cat Food",
+//     price: 152.82,
+//     rating: 0.0,
+//     reviews: 0,
+//     category: "Pet Care",
+//     image: img("Premium Cat Food"),
+//   },
+//   {
+//     id: 158,
+//     name: "Vine Blend Cat Toy",
+//     price: 124.33,
+//     rating: 0.0,
+//     reviews: 0,
+//     category: "Pet Care",
+//     image: img("Vine Blend Toy"),
+//   },
+//   {
+//     id: 159,
+//     name: "Blue Pin Brush",
+//     price: 291.73,
+//     rating: 0.0,
+//     reviews: 0,
+//     category: "Pet Care",
+//     image: img("Blue Pin Brush"),
+//   },
+//   {
+//     id: 160,
+//     name: "Royal Canin Dog Food",
+//     price: 207.37,
+//     rating: 0.0,
+//     reviews: 0,
+//     category: "Pet Care",
+//     image: img("Royal Canin"),
+//   },
+//   {
+//     id: 161,
+//     name: "Pet Safe Elite",
+//     price: 159.85,
+//     rating: 0.0,
+//     reviews: 0,
+//     category: "Pet Care",
+//     image: img("Pet Safe Elite"),
+//   },
+//   {
+//     id: 162,
+//     name: "Hill Science Diet Dog",
+//     price: 97.36,
+//     rating: 0.0,
+//     reviews: 0,
+//     category: "Pet Care",
+//     image: img("Hill Science Diet"),
+//   },
+//   {
+//     id: 163,
+//     name: "Halloween Dog Taco",
+//     price: 166.38,
+//     rating: 0.0,
+//     reviews: 0,
+//     category: "Pet Care",
+//     image: img("Dog Taco"),
+//   },
+//   {
+//     id: 164,
+//     name: "Colorado Dog Collar",
+//     price: 142.13,
+//     rating: 0.0,
+//     reviews: 0,
+//     category: "Pet Care",
+//     image: img("Dog Collar Colorado"),
+//   },
+//   {
+//     id: 165,
+//     name: "Bling Dog Collar",
+//     price: 45.56,
+//     rating: 0.0,
+//     reviews: 0,
+//     category: "Pet Care",
+//     image: img("Bling Dog Collar"),
+//   },
+//   {
+//     id: 166,
+//     name: "Popsicle Dog Collar",
+//     price: 182.29,
+//     rating: 0.0,
+//     reviews: 0,
+//     category: "Pet Care",
+//     image: img("Popsicle Collar"),
+//   },
+// ];
+
+
 export const petProducts = [
-  {
-    id: 151,
-    name: "Paradise Toys",
-    price: 48.84,
-    rating: 0.0,
-    reviews: 0,
-    category: "Pet Care",
-    image: img("Paradise Toys"),
-  },
-  {
-    id: 152,
-    name: "Kaytee Bird Food",
-    price: 13.99,
-    rating: 0.0,
-    reviews: 0,
-    category: "Pet Care",
-    image: img("Kaytee Bird Food"),
-  },
+
+
   {
     id: 153,
     name: "Sophresh Cat Food",
@@ -1117,7 +839,7 @@ export const petProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Pet Care",
-    image: img("Sophresh Cat Food"),
+    image: So_Phresh_Pink_Scoopable,
   },
   {
     id: 154,
@@ -1126,7 +848,7 @@ export const petProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Pet Care",
-    image: img("Cat Toy"),
+    image: Cat_Toy,
   },
   {
     id: 155,
@@ -1135,17 +857,9 @@ export const petProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Pet Care",
-    image: img("Ball Cat Toy"),
+    image: Multipack_Ball_Cat_Toy,
   },
-  {
-    id: 156,
-    name: "Leaps Bounds Cat Toy",
-    price: 72.5,
-    rating: 0.0,
-    reviews: 0,
-    category: "Pet Care",
-    image: img("Leaps Bounds"),
-  },
+
   {
     id: 157,
     name: "Premium Cat Food",
@@ -1153,17 +867,9 @@ export const petProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Pet Care",
-    image: img("Premium Cat Food"),
+    image: Premium_Cat_Food,
   },
-  {
-    id: 158,
-    name: "Vine Blend Cat Toy",
-    price: 124.33,
-    rating: 0.0,
-    reviews: 0,
-    category: "Pet Care",
-    image: img("Vine Blend Toy"),
-  },
+
   {
     id: 159,
     name: "Blue Pin Brush",
@@ -1171,7 +877,7 @@ export const petProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Pet Care",
-    image: img("Blue Pin Brush"),
+    image: Water_Blue_Pin_Brush,
   },
   {
     id: 160,
@@ -1180,7 +886,7 @@ export const petProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Pet Care",
-    image: img("Royal Canin"),
+    image: Royal_Canin_Dog_Food,
   },
   {
     id: 161,
@@ -1189,7 +895,7 @@ export const petProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Pet Care",
-    image: img("Pet Safe Elite"),
+    image: Pet_Safe_Elite,
   },
   {
     id: 162,
@@ -1198,7 +904,7 @@ export const petProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Pet Care",
-    image: img("Hill Science Diet"),
+    image: Hill_Science_Diet_Dog,
   },
   {
     id: 163,
@@ -1207,7 +913,7 @@ export const petProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Pet Care",
-    image: img("Dog Taco"),
+    image: Halloween_Dog_Taco,
   },
   {
     id: 164,
@@ -1216,7 +922,7 @@ export const petProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Pet Care",
-    image: img("Dog Collar Colorado"),
+    image: Colorado_Dog_Collar,
   },
   {
     id: 165,
@@ -1225,7 +931,7 @@ export const petProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Pet Care",
-    image: img("Bling Dog Collar"),
+    image: Bling_Dog_Collar,
   },
   {
     id: 166,
@@ -1234,7 +940,7 @@ export const petProducts = [
     rating: 0.0,
     reviews: 0,
     category: "Pet Care",
-    image: img("Popsicle Collar"),
+    image: Popsicle_Dog_Collar,
   },
 ];
 
